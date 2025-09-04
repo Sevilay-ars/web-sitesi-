@@ -1,0 +1,10 @@
+icerik/vid.mp4 filter=lfs diff=lfs merge=lfs -text
+icerik/Adsız.mp4 filter=lfs diff=lfs merge=lfs -text
+icerik/iletişim.mp4 filter=lfs diff=lfs merge=lfs -text
+icerik/imgvideo.mp4 filter=lfs diff=lfs merge=lfs -text
+icerik/kemençe.mp4 filter=lfs diff=lfs merge=lfs -text
+icerik/kıyafet.mp4 filter=lfs diff=lfs merge=lfs -text
+icerik/trabzon.mp4 filter=lfs diff=lfs merge=lfs -text
+icerik/Tulum.mp4 filter=lfs diff=lfs merge=lfs -text
+icerik/vid2.mp4 filter=lfs diff=lfs merge=lfs -text
+icerik/yemekler.mp4 filter=lfs diff=lfs merge=lfs -text
