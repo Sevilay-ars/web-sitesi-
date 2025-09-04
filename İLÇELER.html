@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>İLÇELER</title>
+    <link rel="stylesheet" href="final.css">
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        nav {
+            position: relative;
+            display: table;
+            margin: 0 auto;
+        }
+
+        nav a {
+            position: relative;
+            display: table-cell;
+            color: #6F0928;
+            text-decoration: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            padding: 10px 20px;
+            transition: 0.2s ease color;
+        }
+
+        nav a:before, nav a:after {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            transform: scale(0);
+            transition: 0.2s ease transform;
+        }
+
+        nav a:before { top: 0; left: 10px; width: 6px; height: 6px; }
+        nav a:after { top: 5px; left: 18px; width: 4px; height: 4px; }
+
+        nav a:nth-child(1):before { background-color: yellow; }
+        nav a:nth-child(1):after { background-color: red; }
+        nav a:nth-child(2):before { background-color: #00e2ff; }
+        nav a:nth-child(2):after { background-color: #89ff00; }
+        nav a:nth-child(3):before { background-color: purple; }
+        nav a:nth-child(3):after { background-color: palevioletred; }
+        nav a:nth-child(4):before { background-color: mediumorchid; }
+        nav a:nth-child(4):after { background-color: mediumpurple; }
+        nav a:nth-child(5):before { background-color: lightseagreen; }
+        nav a:nth-child(5):after { background-color: lightgreen; }
+
+        #indicator {
+            position: absolute;
+            left: 5%;
+            bottom: 0;
+            width: 30px;
+            height: 3px;
+            background-color: rgb(229, 14, 14);
+            border-radius: 5px;
+            transition: 0.2s ease left;
+        }
+
+        nav a:hover { color: rgb(89, 77, 77); }
+        nav a:hover:before, nav a:hover:after { transform: scale(1); }
+
+        nav a:nth-child(1):hover ~ #indicator { background: linear-gradient(130deg, yellow, red); }
+        nav a:nth-child(2):hover ~ #indicator { left: 34%; background: linear-gradient(130deg, #00e2ff, #89ff00); }
+        nav a:nth-child(3):hover ~ #indicator { left: 60%; background: linear-gradient(130deg, purple, palevioletred); }
+        nav a:nth-child(4):hover ~ #indicator { left: 75%; background: linear-gradient(130deg, mediumorchid, mediumpurple); }
+        nav a:nth-child(5):hover ~ #indicator { left: 90%; background: linear-gradient(130deg, lightseagreen, lightgreen); }
+
+        table {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            width: 100%;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="içerik">
+    <div id="resim">
+        <img src="icerik/6.jpeg" alt="Trabzon" id="trabzon">
+    </div>
+    <br>
+
+    <nav>
+        <div id="menu">
+            <a href="ANASAYFA.html">ANASAYFA</a>
+            <a href="İLÇELER.html">İLÇELER</a>
+            <a href="TARİHİ_YERLER.html">TARİHİ YERLER</a>
+            <a href="KÜLTÜR.html">KÜLTÜR</a>
+            <a href="İLETİŞİM.html">İLETİŞİM</a>
+            <div id="indicator"></div>
+        </div>
+    </nav>
+
+    <div id="alt">
+        <table>
+            <tr>
+                <th><a href="http://www.akcaabat.gov.tr" style="color: black;">AKÇAABAT</a><br><img src="icerik/akçaabat.jpg" alt="AKÇAABAT" width="210" height="200"></th>
+                <th><a href="http://www.arakli.gov.tr" style="color: black;">ARAKLI</a><br><img src="icerik/araklı.jpg" alt="ARAKLI" width="210" height="200"></th>
+                <th><a href="http://www.arsin.gov.tr" style="color: black;">ARSİN</a><br><img src="icerik/arsin.jpg" alt="ARSİN" width="210" height="200"></th>
+                <th><a href="http://www.besikduzu.gov.tr" style="color: black;">BEŞİKDÜZÜ</a><br><img src="icerik/beşikdüzü.jpg" alt="BEŞİKDÜZÜ" width="210" height="200"></th>
+                <th><a href="http://www.carsibasi.gov.tr" style="color: black;">ÇARŞIBAŞI</a><br><img src="icerik/çarşıbaşı.jpg" alt="ÇARŞIBAŞI" width="220" height="200"></th>
+                <th><a href="http://www.çaykara.gov.tr" style="color: black;">ÇAYKARA</a><br><img src="icerik/çaykara.jpg" alt="ÇAYKARA" width="215" height="200"></th>
+            </tr>
+            <tr>
+                <th><a href="http://www.dernekpazari.gov.tr" style="color: black;">DERNEKPAZARI</a><br><img src="icerik/dernekpazarı.webp" alt="DERNEKPAZARI" width="200" height="200"></th>
+                <th><a href="http://www.duzkoy.gov.tr" style="color: black;">DÜZKÖY</a><br><img src="icerik/düzköy.jpg" alt="DÜZKÖY" width="200" height="200"></th>
+                <th><a href="http://www.hayrat.gov.tr" style="color: black;">HAYRAT</a><br><img src="icerik/hayrat.jpg" alt="HAYRAT" width="200" height="200"></th>
+                <th><a href="http://www.koprubasi.gov.tr" style="color: black;">KÖPRÜBAŞI</a><br><img src="icerik/köprübaşı.jpg" alt="KÖPRÜBAŞI" width="200" height="200"></th>
+                <th><a href="http://www.macka.gov.tr" style="color: black;">MAÇKA</a><br><img src="icerik/maçka.jpg" alt="MAÇKA" width="200" height="200"></th>
+                <th><a href="http://www.of.gov.tr" style="color: black;">OF</a><br><img src="icerik/of.jpg" alt="OF" width="200" height="200"></th>
+            </tr>
+            <tr>
+                <th><a href="http://www.ortahisar.gov.tr" style="color: black;">ORTAHİSAR</a><br><img src="icerik/ortahisar.jpg" alt="ORTAHİSAR" width="200" height="200"></th>
+                <th><a href="http://www.surmene.gov.tr" style="color: black;">SÜRMENE</a><br><img src="icerik/sürmene.jpg" alt="SÜRMENE" width="200" height="200"></th>
+                <th><a href="http://www.salpazari.gov.tr" style="color: black;">ŞALPAZARI</a><br><img src="icerik/şalpazarı.jpg" alt="ŞALPAZARI" width="200" height="200"></th>
+                <th><a href="http://www.tonya.gov.tr" style="color: black;">TONYA</a><br><img src="icerik/tonya.jpg" alt="TONYA" width="200" height="200"></th>
+                <th><a href="http://www.yomra.gov.tr" style="color: black;">YOMRA</a><br><img src="icerik/yomra.jpg" alt="YOMRA" width="200" height="200"></th>
+                <th><a href="http://www.vakfikebir.gov.tr" style="color: black;">VAKFIKEBİR</a><br><img src="icerik/vakfıkebir.jpg" alt="VAKFIKEBİR" width="200" height="200"></th>
+            </tr>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
